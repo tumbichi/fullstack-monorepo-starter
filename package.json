@@ -1,0 +1,24 @@
+{
+  "name": "epica-shop",
+  "version": "1.0.0",
+  "description": "Épica showroom apps",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run --parallel start:dev",
+    "build": "pnpm run --parallel build",
+    "start": "pnpm run --parallel start:prod",
+    "build:api": "pnpm --filter api build",
+    "build:shop": "pnpm --filter shop build",
+    "start:api": "pnpm --filter api start:prod",
+    "start:shop": "pnpm --filter shop start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tumbichi",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.0.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  }
+}

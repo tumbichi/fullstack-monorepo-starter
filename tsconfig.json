@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "target": "es2022",
+    "lib": [
+      "es2022"
+    ],
+    "paths": {
+      "@api/*": [
+        "./apps/api/src/*"
+      ],
+      "@shop/*": [
+        "./apps/shop/src/*"
+      ],
+      "@backoffice/*": [
+        "./apps/backoffice/src/*"
+      ]
+    }
+  }
+}

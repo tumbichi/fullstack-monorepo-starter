@@ -1,0 +1,43 @@
+{
+  "name": "auth-module",
+  "version": "1.1.4",
+  "description": "React library that provide authentication logic from kushi applications",
+  "repository": "git://github.com:KushiTech/auth-module.git",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "lint": "eslint",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "axios": "1.6.8",
+    "next": "14.2.3",
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/cookies": "0.7.7",
+    "@types/node": "20.12.7",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "5.27.1",
+    "@typescript-eslint/parser": "5.27.1",
+    "eslint": "8.17.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-react": "7.30.0"
+  },
+  "dependencies": {
+    "cookie-cutter": "0.2.0",
+    "cookies": "0.8.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "backoffice",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "next dev -p 3001",
+    "build": "next build",
+    "start:prod": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "2.1.1",
+    "@chakra-ui/react": "2.8.2",
+    "@chakra-ui/theme-tools": "2.1.2",
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@heroicons/react": "2.1.3",
+    "@hookform/resolvers": "3.3.4",
+    "auth-module": "file:../../packages/auth-module",
+    "axios": "1.6.8",
+    "chakra-react-select": "4.7.6",
+    "dayjs": "1.11.10",
+    "i18next": "23.11.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "next": "14.2.3",
+    "react-hook-form": "7.51.3",
+    "react-i18next": "14.1.1",
+    "zod": "3.23.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.2",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
+}
